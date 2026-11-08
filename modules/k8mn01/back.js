@@ -3,6 +3,11 @@
 var m4Menubg = json.desing.menubg || json.desing.color || '';
 var m4Menutext = json.desing.menutext || '#fff';
 var m4Menuhoverbg = json.desing.menuhoverbg || 'rgba(255,255,255,.18)';
+// 8 Kas 2026 (koyu mod kontrast): zemin site yazi renginden turetiliyorsa (var(--mx-site-text...)) koyu modda ACIK renge doner;
+// sabit #fff yazi/hover o zaman 1.18:1 kalir (saas). Boyle zeminde yazi ve hover site ZEMIN rengine baglanir (cift her semada zit).
+var m4Oto = /var\(\s*--mx-site-text/.test(m4Menubg);
+if (m4Oto && /^#(?:f{3}|f{6})$/i.test(String(m4Menutext).trim())) { m4Menutext = 'var(--mx-site-bg, #ffffff)'; }
+if (m4Oto && /^rgba\(\s*255\s*,\s*255\s*,\s*255/i.test(String(m4Menuhoverbg).trim())) { m4Menuhoverbg = 'color-mix(in srgb, var(--mx-site-bg, #ffffff) 22%, transparent)'; }
 html = html.replace(/--menubg--/g, m4Menubg).replace(/--menutext--/g, m4Menutext).replace(/--menuhoverbg--/g, m4Menuhoverbg);
 // Find the page with `modulestatus.page` set to true
 var pagesettingjson = webmakerdata.pagesetting.data.find(
