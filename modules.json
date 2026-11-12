@@ -30,6 +30,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "version": "1.0.0",
@@ -766,7 +772,12 @@
         "social_media": false,
         "logo_maxh": "60px",
         "logo_plate": false,
-        "contact_line": "auto"
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
       },
       "version": "1.0.0",
       "icon": "widgets",
@@ -1478,9 +1489,9 @@
         "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "border": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "cta": {
-          "tr": "Teklif al",
-          "en": "Get a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Keşif iste",
+          "en": "Request a survey",
+          "ar": "اطلب معاينة"
         },
         "cta_url": "teklif-al"
       },
@@ -1522,7 +1533,7 @@
         "hiza": "orta",
         "yukseklik": 82,
         "max": "1200px",
-        "img": "sanayi-uretim-hatti.webp",
+        "img": "enerji-pano.webp",
         "video": "",
         "poster": "",
         "alt": "Volt Elektrik",
@@ -1533,30 +1544,30 @@
         "bg": "var(--mx-site-bg, #ffffff)",
         "radius": "16px",
         "eyebrow": {
-          "tr": "Elektrik · otomasyon",
-          "en": "Electrical & automation",
-          "ar": "كهربية وأتمتة"
+          "tr": "Elektrik tesisatı · pano · otomasyon",
+          "en": "Wiring · panels · automation",
+          "ar": "التمديدات الكهربائية · اللوحات · الأتمتة"
         },
         "title": {
-          "tr": "Devre, sakin akmalı",
-          "en": "The circuit should flow calmly",
-          "ar": "عليك أن يمتص الدائرة بهدوء"
+          "tr": "Güvenli hat, ölçülü teslim",
+          "en": "Safe wiring, measured handover",
+          "ar": "تمديدات آمنة وتسليم موثّق بالقياس"
         },
         "metin": {
-          "tr": "Volt Elektrik, elektrik ve otomasyon sunar. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Volt offers electrical and automation. Images are representative and text is fictional.",
-          "ar": "يققدم فولط كهربية وأتمتة. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Volt Elektrik; konut, ofis ve işyerlerinde tesisat, pano ve otomasyon işleri yapar. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Volt Elektrik handles wiring, panels and automation for homes, offices and businesses. Images are representative; text is fictional.",
+          "ar": "تنفّذ فولت إلكتريك أعمال التمديدات واللوحات والأتمتة للمنازل والمكاتب والمنشآت. الصور تمثيلية والنصوص افتراضية."
         },
         "cta1": {
-          "tr": "Projeler",
-          "en": "Projects",
-          "ar": "مشروعات"
+          "tr": "Hizmetlerimiz",
+          "en": "Our services",
+          "ar": "خدماتنا"
         },
         "cta1_url": "hizmetler",
         "cta2": {
-          "tr": "Teklif iste",
-          "en": "Request quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Keşif iste",
+          "en": "Request a survey",
+          "ar": "اطلب معاينة"
         },
         "cta2_url": "teklif-al",
         "scroll_label": {
@@ -1601,9 +1612,9 @@
         "radius": "16px",
         "sure": 1000,
         "title": {
-          "tr": "Ne satılır, ne yapılır?",
-          "en": "What is sold, what is done?",
-          "ar": "ما الذي يُباع وما الذي يُنجز؟"
+          "tr": "Neler yapıyoruz?",
+          "en": "What do we do?",
+          "ar": "ماذا نقدّم؟"
         },
         "description": {
           "tr": "Kurgusal demo verileri.",
@@ -1613,13 +1624,13 @@
       },
       "data": [
         {
-          "deger": 200,
-          "sonek": "",
-          "ikon": "build",
+          "deger": 350,
+          "sonek": "+",
+          "ikon": "task_alt",
           "etiket": {
-            "tr": "M2 depo",
-            "en": "M2 warehouse",
-            "ar": "مستودع م٢"
+            "tr": "Tamamlanan iş",
+            "en": "Jobs completed",
+            "ar": "عمل منجز"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1628,28 +1639,13 @@
           }
         },
         {
-          "deger": 15,
+          "deger": 12,
           "sonek": "",
-          "ikon": "precision_manufacturing",
+          "ikon": "history",
           "etiket": {
-            "tr": "Makine tipi",
-            "en": "Machine types",
-            "ar": "أنواع الآلات"
-          },
-          "aciklama": {
-            "tr": "Kurgusal demo değeri",
-            "en": "Fictional demo figure",
-            "ar": "قيمة تجريبية"
-          }
-        },
-        {
-          "deger": 99,
-          "sonek": "%",
-          "ikon": "verified",
-          "etiket": {
-            "tr": "Denetim geçişi",
-            "en": "Inspection pass",
-            "ar": "نسبة الفحص"
+            "tr": "Yıl deneyim",
+            "en": "Years of experience",
+            "ar": "سنة خبرة"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1664,7 +1660,22 @@
           "etiket": {
             "tr": "Saha ekibi",
             "en": "Field team",
-            "ar": "طاقم ميداني"
+            "ar": "فريق ميداني"
+          },
+          "aciklama": {
+            "tr": "Kurgusal demo değeri",
+            "en": "Fictional demo figure",
+            "ar": "قيمة تجريبية"
+          }
+        },
+        {
+          "deger": 24,
+          "sonek": "/7",
+          "ikon": "support_agent",
+          "etiket": {
+            "tr": "Arıza hattı",
+            "en": "Fault line",
+            "ar": "خط الأعطال"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1695,98 +1706,98 @@
         "badgebg": "#2E6BFF",
         "badgecolor": "#ffffff",
         "badge": {
-          "tr": "Teknik & Depo",
-          "en": "Technical & Warehouse",
-          "ar": "تقني ومستودع"
+          "tr": "Hizmetlerimiz",
+          "en": "Our services",
+          "ar": "خدماتنا"
         },
         "title": {
-          "tr": "Ne satılır, ne yapılır?",
-          "en": "What is sold, what is done?",
-          "ar": "ما الذي يُباع وما الذي يُنجز؟"
+          "tr": "Neler yapıyoruz?",
+          "en": "What do we do?",
+          "ar": "ماذا نقدّم؟"
         },
         "description": {
-          "tr": "Raftan rafa; aletten alete.",
-          "en": "From shelf to shelf; from tool to tool.",
-          "ar": "من رف إلى رف؛ من أداة إلى أداة."
+          "tr": "Tesisattan otomasyona; keşif, uygulama ve ölçüm.",
+          "en": "From wiring to automation; survey, installation and testing.",
+          "ar": "من التمديدات إلى الأتمتة؛ معاينة وتنفيذ وقياس."
         }
       },
       "data": [
         {
-          "icon": "precision_manufacturing",
+          "icon": "electrical_services",
           "name": {
-            "tr": "Makine bakımı",
-            "en": "Machine service",
-            "ar": "صيانة الآلات"
+            "tr": "Elektrik tesisatı",
+            "en": "Electrical wiring",
+            "ar": "التمديدات الكهربائية"
           },
           "description": {
-            "tr": "Periyodik bakım ve yağlama.",
-            "en": "Periodic maintenance and lubrication.",
-            "ar": "صيانة دورية وتزييت."
+            "tr": "Konut, ofis ve işyeri için kablolama, priz ve aydınlatma hatları.",
+            "en": "Cabling, socket and lighting circuits for homes, offices and shops.",
+            "ar": "كابلات ومآخذ ودوائر إنارة للمنازل والمكاتب والمحلات."
           }
         },
         {
-          "icon": "electric_bolt",
+          "icon": "electric_meter",
           "name": {
-            "tr": "Enerji panosu",
-            "en": "Energy board",
-            "ar": "لوحة الطاقة"
+            "tr": "Pano ve dağıtım",
+            "en": "Panels and distribution",
+            "ar": "اللوحات والتوزيع"
           },
           "description": {
-            "tr": "Pano, kablo ve ölçüm.",
-            "en": "Panel, cable and measurement.",
-            "ar": "لوح وكابل وقياس."
+            "tr": "Dağıtım panosu, sigorta ve kaçak akım koruması; etiketli ve şemalı.",
+            "en": "Distribution boards, fuses and residual-current protection; labelled and documented.",
+            "ar": "لوحات توزيع ومصاهر وحماية من التسرب؛ موسومة وموثّقة بمخططات."
+          }
+        },
+        {
+          "icon": "lightbulb",
+          "name": {
+            "tr": "Aydınlatma",
+            "en": "Lighting",
+            "ar": "الإنارة"
+          },
+          "description": {
+            "tr": "LED aydınlatma, armatür değişimi ve zaman ya da sensör kontrolü.",
+            "en": "LED lighting, fixture replacement and timer or sensor control.",
+            "ar": "إنارة LED واستبدال الوحدات وتحكّم بالمؤقّت أو المستشعر."
+          }
+        },
+        {
+          "icon": "settings_input_component",
+          "name": {
+            "tr": "Otomasyon",
+            "en": "Automation",
+            "ar": "الأتمتة"
+          },
+          "description": {
+            "tr": "PLC, sensör ve kontrol panosu ile basit proses otomasyonu.",
+            "en": "Simple process automation with PLCs, sensors and control panels.",
+            "ar": "أتمتة عمليات بسيطة باستخدام وحدات PLC ومستشعرات ولوحات تحكّم."
+          }
+        },
+        {
+          "icon": "speed",
+          "name": {
+            "tr": "Test ve ölçüm",
+            "en": "Testing and measurement",
+            "ar": "الفحص والقياس"
+          },
+          "description": {
+            "tr": "Topraklama ve izolasyon ölçümü, yük ve kaçak akım kontrolü.",
+            "en": "Earthing and insulation measurements, load and leakage-current checks.",
+            "ar": "قياس التأريض والعزل وفحص الأحمال وتيار التسرّب."
           }
         },
         {
           "icon": "build",
           "name": {
-            "tr": "Yapı malzemesi",
-            "en": "Building material",
-            "ar": "مواد البناء"
+            "tr": "Bakım ve arıza",
+            "en": "Maintenance and repair",
+            "ar": "الصيانة والأعطال"
           },
           "description": {
-            "tr": "Araç ve iş makinesi malzemesi.",
-            "en": "Equipment and construction material.",
-            "ar": "معدات ومواد البناء."
-          }
-        },
-        {
-          "icon": "engineering",
-          "name": {
-            "tr": "Teknik çizim",
-            "en": "Technical drawing",
-            "ar": "رسم تقني"
-          },
-          "description": {
-            "tr": "Teknik çizim ve keşif.",
-            "en": "Technical drawing and survey.",
-            "ar": "رسم تقني ومسح."
-          }
-        },
-        {
-          "icon": "local_shipping",
-          "name": {
-            "tr": "Depo ve sevkiyat",
-            "en": "Warehouse and shipping",
-            "ar": "مستودع وشحن"
-          },
-          "description": {
-            "tr": "Depo düzeni ve sevk planı.",
-            "en": "Warehouse organization and dispatch plan.",
-            "ar": "تنظيم المستودع وخطة الإرسال."
-          }
-        },
-        {
-          "icon": "security",
-          "name": {
-            "tr": "İş güvenliği",
-            "en": "Work safety",
-            "ar": "سلامة العمل"
-          },
-          "description": {
-            "tr": "Koruyucu ekipman ve kontrol.",
-            "en": "Protective equipment and inspection.",
-            "ar": "معدات وقاية وتحقق."
+            "tr": "Periyodik bakım ve arıza müdahalesi; acil çağrı hattı.",
+            "en": "Periodic maintenance and fault response; emergency call line.",
+            "ar": "صيانة دورية ومعالجة الأعطال؛ خط للاتصال الطارئ."
           }
         }
       ],
@@ -1819,14 +1830,14 @@
           "ar": "كيف نعمل؟"
         },
         "title": {
-          "tr": "Dört adımda süreç",
-          "en": "Process in four steps",
-          "ar": "العملية في أربع خطوات"
+          "tr": "Dört adımda elektrik işi",
+          "en": "Electrical work in four steps",
+          "ar": "العمل الكهربائي في أربع خطوات"
         },
         "description": {
-          "tr": "İlk görüşmeden teslimata aynı akış.",
-          "en": "The same flow, from first meeting to handover.",
-          "ar": "نفس التيار من أول لقاء إلى التسليم."
+          "tr": "Keşiften ölçüm raporuna aynı akış.",
+          "en": "The same flow from survey to test report.",
+          "ar": "المسار نفسه من المعاينة إلى تقرير القياس."
         },
         "accentText": "#ffffff",
         "cardbg": "var(--mx-site-surface, #ffffff)",
@@ -1838,12 +1849,12 @@
           "title": {
             "tr": "Keşif",
             "en": "Survey",
-            "ar": "المسح"
+            "ar": "المعاينة"
           },
           "text": {
-            "tr": "Saha ölçümü ve kayıt.",
-            "en": "Site measurement and record.",
-            "ar": "قياس الموقع والتسجيل."
+            "tr": "Mekânda yük, hat ve pano durumu incelenir.",
+            "en": "Load, wiring and panel condition are inspected on site.",
+            "ar": "تُفحص الأحمال والتمديدات وحالة اللوحة في الموقع."
           }
         },
         {
@@ -1851,38 +1862,38 @@
           "title": {
             "tr": "Teklif",
             "en": "Quote",
-            "ar": "العرض"
+            "ar": "عرض السعر"
           },
           "text": {
-            "tr": "Malzeme ve iş listesi.",
-            "en": "Material and work list.",
-            "ar": "قائمة المواد والأعمال."
+            "tr": "Malzeme listesi, iş takvimi ve fiyat yazılı verilir.",
+            "en": "A written material list, schedule and price are provided.",
+            "ar": "تُقدَّم قائمة المواد والجدول الزمني والسعر كتابةً."
           }
         },
         {
           "year": "03",
           "title": {
-            "tr": "Montaj",
-            "en": "Assembly",
-            "ar": "التجميع"
+            "tr": "Uygulama",
+            "en": "Installation",
+            "ar": "التنفيذ"
           },
           "text": {
-            "tr": "Kurulum ve ayar.",
-            "en": "Assembly and adjustment.",
-            "ar": "تركيب وضبط."
+            "tr": "Hat çekimi, pano kurulumu ve bağlantılar yapılır.",
+            "en": "Cabling, panel installation and connections are carried out.",
+            "ar": "تُنفَّذ التمديدات وتركيب اللوحة والتوصيلات."
           }
         },
         {
           "year": "04",
           "title": {
-            "tr": "Denetim",
-            "en": "Inspection",
-            "ar": "الفحص"
+            "tr": "Ölçüm ve teslim",
+            "en": "Testing and handover",
+            "ar": "الفحص والتسليم"
           },
           "text": {
-            "tr": "Test ve devir.",
-            "en": "Test and handover.",
-            "ar": "اختبار وتسليم."
+            "tr": "Topraklama ve izolasyon ölçülür, şema teslim edilir.",
+            "en": "Earthing and insulation are tested and the diagrams are handed over.",
+            "ar": "يُقاس التأريض والعزل وتُسلَّم المخططات."
           }
         }
       ],
@@ -1911,14 +1922,14 @@
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
         "accent": "var(--mx-site-primary, #2563eb)",
         "badge": {
-          "tr": "Ekibimiz",
-          "en": "Our team",
-          "ar": "فريقنا"
+          "tr": "Saha ekibimiz",
+          "en": "Our field team",
+          "ar": "فريقنا الميداني"
         },
         "title": {
-          "tr": "Sizi karşılayan ekip",
-          "en": "The team that welcomes you",
-          "ar": "الفريق الذي يستقبلك"
+          "tr": "Sahadaki uzmanlar",
+          "en": "The specialists on site",
+          "ar": "المختصون في الموقع"
         },
         "description": {
           "tr": "Kurgusal demo profiller.",
@@ -1932,42 +1943,42 @@
         {
           "name": "Kadir E.",
           "role": {
-            "tr": "Makine ustası",
-            "en": "Master fitter",
-            "ar": "فني آليات"
+            "tr": "Elektrik teknikeri",
+            "en": "Electrical technician",
+            "ar": "فنّي كهرباء"
           },
           "bio": {
-            "tr": "14 yıl montaj.",
-            "en": "14 years of assembly.",
-            "ar": "١٤ عامًا في التركيب."
+            "tr": "Konut ve işyeri tesisatında 14 yıl.",
+            "en": "14 years in home and commercial wiring.",
+            "ar": "14 عامًا في تمديدات المنازل والمنشآت."
           },
           "img": ""
         },
         {
           "name": "Selim O.",
           "role": {
-            "tr": "Elektrikçi",
-            "en": "Electrician",
-            "ar": "كهربائي"
+            "tr": "Pano ve otomasyon uzmanı",
+            "en": "Panel and automation specialist",
+            "ar": "أخصائي لوحات وأتمتة"
           },
           "bio": {
-            "tr": "10 yıl pano.",
-            "en": "10 years of panels.",
-            "ar": "١٠ سنوات في الألواح."
+            "tr": "Pano ve PLC işlerinde 10 yıl.",
+            "en": "10 years on panel and PLC work.",
+            "ar": "10 سنوات في أعمال اللوحات ووحدات PLC."
           },
           "img": ""
         },
         {
           "name": "Hüseyin R.",
           "role": {
-            "tr": "Depo",
-            "en": "Warehouse lead",
-            "ar": "مستودع"
+            "tr": "Saha şefi",
+            "en": "Site supervisor",
+            "ar": "مشرف ميداني"
           },
           "bio": {
-            "tr": "6 yıl sevk.",
-            "en": "6 years of dispatch.",
-            "ar": "٦ سنوات في الإرسال."
+            "tr": "Saha koordinasyonu ve iş güvenliğinde 6 yıl.",
+            "en": "6 years in site coordination and safety.",
+            "ar": "6 سنوات في تنسيق العمل الميداني والسلامة."
           },
           "img": ""
         }
@@ -1998,13 +2009,13 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "starcolor": "#f59e0b",
         "badge": {
-          "tr": "Müşteri yorumları",
-          "en": "Customer reviews",
-          "ar": "تقييمات العملاء"
+          "tr": "Yorumlar",
+          "en": "Reviews",
+          "ar": "التقييمات"
         },
         "title": {
           "tr": "Müşterilerimiz ne diyor?",
-          "en": "What our customers say",
+          "en": "What our clients say",
           "ar": "ماذا يقول عملاؤنا؟"
         },
         "description": {
@@ -2019,46 +2030,46 @@
         {
           "name": "A. Demir.",
           "role": {
-            "tr": "Firma sahibi",
+            "tr": "İşletme sahibi",
             "en": "Business owner",
-            "ar": "صاحب شركة"
+            "ar": "صاحب منشأة"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Fatura doğru; malzeme etiketli.",
-            "en": "Invoice correct; material labeled.",
-            "ar": "الفاتورة صحيحة؛ المواد موسومة."
+            "tr": "Pano yenileme hafta sonunda bitti; üretim durmadı.",
+            "en": "The panel upgrade was finished over the weekend; production never stopped.",
+            "ar": "انتهى تجديد اللوحة في عطلة الأسبوع ولم يتوقف الإنتاج."
           }
         },
         {
-          "name": "Mustafa G.",
+          "name": "M. Gök.",
           "role": {
-            "tr": "İşletme",
-            "en": "Business client",
-            "ar": "إدارة"
+            "tr": "Site yöneticisi",
+            "en": "Building manager",
+            "ar": "مدير مجمّع"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Montaj süresi plana uygun.",
-            "en": "Assembly time is as planned.",
-            "ar": "زمن التركيب يتناسب مع الخطة."
+            "tr": "Topraklama ölçümleri raporlu ve şemalı teslim edildi.",
+            "en": "Earthing measurements were handed over with a report and diagrams.",
+            "ar": "سُلّمت قياسات التأريض مع تقرير ومخططات."
           }
         },
         {
           "name": "T. Kılıç.",
           "role": {
-            "tr": "Alıcı",
-            "en": "Buyer",
-            "ar": "مشترى"
+            "tr": "Mağaza sahibi",
+            "en": "Shop owner",
+            "ar": "صاحب محل"
           },
           "rating": 4,
           "img": "",
           "text": {
-            "tr": "Depodan teslim net.",
-            "en": "Delivery from warehouse is clear.",
-            "ar": "التسليم من المستودع واضح."
+            "tr": "Aydınlatmayı yenilediler; mağaza çok daha aydınlık.",
+            "en": "They renewed the lighting; the shop is much brighter.",
+            "ar": "جدّدوا الإنارة وأصبح المحل أكثر إضاءة بكثير."
           }
         }
       ],
@@ -2105,15 +2116,15 @@
         "eyebrow": {
           "tr": "Neyi iyi yaparız?",
           "en": "What we do well",
-          "ar": "ما نتقنه؟"
+          "ar": "ما نتقنه"
         },
         "title": {
-          "tr": "Ne satılır, ne yapılır?",
-          "en": "What is sold, what is done?",
-          "ar": "ما الذي يُباع وما الذي يُنجز؟"
+          "tr": "Tesisattan otomasyona",
+          "en": "From wiring to automation",
+          "ar": "من التمديدات إلى الأتمتة"
         },
         "description": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
+          "tr": "Görseller temsilidir; bu bir kurulum demosudur.",
           "en": "Images are representative; this is a setup demo.",
           "ar": "الصور تمثيلية وهذا عرض تجريبي."
         },
@@ -2126,16 +2137,16 @@
       "data": [
         {
           "baslik": {
-            "tr": "Makine bakımı",
-            "en": "Machine service",
-            "ar": "صيانة الآلات"
+            "tr": "Elektrik tesisatı",
+            "en": "Electrical wiring",
+            "ar": "التمديدات الكهربائية"
           },
           "metin": {
-            "tr": "Periyodik bakım ve yağlama.",
-            "en": "Periodic maintenance and lubrication.",
-            "ar": "صيانة دورية وتزييت."
+            "tr": "Konut, ofis ve işyeri için kablolama, priz ve aydınlatma hatları.",
+            "en": "Cabling, socket and lighting circuits for homes, offices and shops.",
+            "ar": "كابلات ومآخذ ودوائر إنارة للمنازل والمكاتب والمحلات."
           },
-          "img": "sanayi-makine-1.webp",
+          "img": "sanayi-ekip-saha.webp",
           "alt": {
             "tr": "Temsilî görsel",
             "en": "Representative image",
@@ -2145,14 +2156,14 @@
         },
         {
           "baslik": {
-            "tr": "Enerji panosu",
-            "en": "Energy board",
-            "ar": "لوحة الطاقة"
+            "tr": "Pano ve dağıtım",
+            "en": "Panels and distribution",
+            "ar": "اللوحات والتوزيع"
           },
           "metin": {
-            "tr": "Pano, kablo ve ölçüm.",
-            "en": "Panel, cable and measurement.",
-            "ar": "لوح وكابل وقياس."
+            "tr": "Dağıtım panosu, sigorta ve kaçak akım koruması; etiketli ve şemalı.",
+            "en": "Distribution boards, fuses and residual-current protection; labelled and documented.",
+            "ar": "لوحات توزيع ومصاهر وحماية من التسرب؛ موسومة وموثّقة بمخططات."
           },
           "img": "sanayi-kalite-lab.webp",
           "alt": {
@@ -2164,16 +2175,16 @@
         },
         {
           "baslik": {
-            "tr": "Yapı malzemesi",
-            "en": "Building material",
-            "ar": "مواد البناء"
+            "tr": "Aydınlatma",
+            "en": "Lighting",
+            "ar": "الإنارة"
           },
           "metin": {
-            "tr": "Araç ve iş makinesi malzemesi.",
-            "en": "Equipment and construction material.",
-            "ar": "معدات ومواد البناء."
+            "tr": "LED aydınlatma, armatür değişimi ve zaman ya da sensör kontrolü.",
+            "en": "LED lighting, fixture replacement and timer or sensor control.",
+            "ar": "إنارة LED واستبدال الوحدات وتحكّم بالمؤقّت أو المستشعر."
           },
-          "img": "sanayi-belge-1.webp",
+          "img": "enerji-evirici.webp",
           "alt": {
             "tr": "Temsilî görsel",
             "en": "Representative image",
@@ -2229,14 +2240,14 @@
         "radius": "4px",
         "showTitle": true,
         "title": {
-          "tr": "Birlikte çalıştığımız kuruluşlar",
-          "en": "Organisations we work with",
-          "ar": "جهات نعمل معها"
+          "tr": "Çalıştığımız yerler",
+          "en": "Places we have worked",
+          "ar": "أماكن عملنا فيها"
         },
         "description": {
-          "tr": "Kurgusal iş ortağı adları; gerçek bir kuruluşa ait değildir.",
-          "en": "Fictional partner names; they do not belong to a real organisation.",
-          "ar": "أسماء شركاء افتراضية لا تعود إلى جهة حقيقية."
+          "tr": "Kurgusal işletme adları; gerçek bir kuruluşa ait değildir.",
+          "en": "Fictional business names; they do not belong to a real organisation.",
+          "ar": "أسماء منشآت افتراضية لا تعود إلى جهة حقيقية."
         },
         "listLabel": {
           "tr": "Referans logoları",
@@ -2246,22 +2257,22 @@
       },
       "data": [
         {
-          "name": "Demo Depo"
+          "name": "Demo Plaza"
         },
         {
-          "name": "Demo Alet"
+          "name": "Demo Fabrika"
+        },
+        {
+          "name": "Demo Site Yönetimi"
+        },
+        {
+          "name": "Demo Market"
+        },
+        {
+          "name": "Demo Otel"
         },
         {
           "name": "Demo Atölye"
-        },
-        {
-          "name": "Demo Malzeme"
-        },
-        {
-          "name": "Demo Forklift"
-        },
-        {
-          "name": "Demo İş Güvenliği"
         }
       ],
       "veri": {
@@ -2304,51 +2315,91 @@
       },
       "data": [
         {
+          "question": {
+            "tr": "Elektrik projesi gerekli mi?",
+            "en": "Is an electrical project required?",
+            "ar": "هل يلزم مشروع كهربائي؟"
+          },
+          "answer": {
+            "tr": "Yeni tesisat ve büyük değişikliklerde yönetmeliğe uygun proje gerekir; keşifte birlikte netleştiririz.",
+            "en": "New installations and major changes need a regulation-compliant project; we clarify this together during the survey.",
+            "ar": "تتطلب التمديدات الجديدة والتعديلات الكبيرة مشروعًا مطابقًا للأنظمة، ونوضّح ذلك معًا أثناء المعاينة."
+          },
           "soru": {
-            "tr": "Garanti süresi ne kadar?",
-            "en": "How long is the warranty?",
-            "ar": "ما مدة الضمان?"
+            "tr": "Elektrik projesi gerekli mi?",
+            "en": "Is an electrical project required?",
+            "ar": "هل يلزم مشروع كهربائي؟"
           },
           "cevap": {
-            "tr": "İş kalemine göre değişir; demo metni örnek vermez.",
-            "en": "It varies by work item; this demo text gives no example.",
-            "ar": "تتغير حسب بند العمل؛ ولا يعطي هذا النص التجريبي مثالاً."
+            "tr": "Yeni tesisat ve büyük değişikliklerde yönetmeliğe uygun proje gerekir; keşifte birlikte netleştiririz.",
+            "en": "New installations and major changes need a regulation-compliant project; we clarify this together during the survey.",
+            "ar": "تتطلب التمديدات الجديدة والتعديلات الكبيرة مشروعًا مطابقًا للأنظمة، ونوضّح ذلك معًا أثناء المعاينة."
           }
         },
         {
+          "question": {
+            "tr": "İş ne kadar sürer?",
+            "en": "How long does a job take?",
+            "ar": "كم يستغرق العمل؟"
+          },
+          "answer": {
+            "tr": "Kapsama göre değişir; teklifte iş takvimi yazılı verilir.",
+            "en": "It depends on the scope; the quote includes a written schedule.",
+            "ar": "يختلف حسب نطاق العمل، ويتضمن عرض السعر جدولًا زمنيًا مكتوبًا."
+          },
           "soru": {
-            "tr": "Sevkiyat hangi günler?",
-            "en": "Which days are deliveries?",
-            "ar": "أيام الشحن?"
+            "tr": "İş ne kadar sürer?",
+            "en": "How long does a job take?",
+            "ar": "كم يستغرق العمل؟"
           },
           "cevap": {
-            "tr": "Hafta içi sabah; saat 09:00 sonrası (demo).",
-            "en": "Weekday mornings; after 09:00 (demo).",
-            "ar": "أصباح أيام العمل؛ بعد ٩ ص (تجريبي)."
+            "tr": "Kapsama göre değişir; teklifte iş takvimi yazılı verilir.",
+            "en": "It depends on the scope; the quote includes a written schedule.",
+            "ar": "يختلف حسب نطاق العمل، ويتضمن عرض السعر جدولًا زمنيًا مكتوبًا."
           }
         },
         {
+          "question": {
+            "tr": "Sitedeki görseller ve veriler gerçek midir?",
+            "en": "Are the images and data on the site real?",
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
+          },
+          "answer": {
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
+            "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
+          },
           "soru": {
             "tr": "Sitedeki görseller ve veriler gerçek midir?",
             "en": "Are the images and data on the site real?",
-            "ar": "هل الصور والبيانات في الموقع حقيقية?"
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
           },
           "cevap": {
-            "tr": "Hayır; bu bir kuruluma örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
             "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
             "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
           }
         },
         {
+          "question": {
+            "tr": "Fiyatlar nasıl belirlenir?",
+            "en": "How are prices determined?",
+            "ar": "كيف تُحدَّد الأسعار؟"
+          },
+          "answer": {
+            "tr": "Keşiften sonra iş kapsamına göre yazılı teklifle belirlenir; genel bir fiyat aralığı demo metninde yer almaz.",
+            "en": "After the survey, a written quote based on the scope sets the price; no general range is shown in this demo text.",
+            "ar": "يُحدَّد السعر بعرض مكتوب بعد المعاينة وفق نطاق العمل، ولا يُذكر نطاق عام في هذا النص التجريبي."
+          },
           "soru": {
             "tr": "Fiyatlar nasıl belirlenir?",
             "en": "How are prices determined?",
-            "ar": "كيف تُحدَّد الأسعار?"
+            "ar": "كيف تُحدَّد الأسعار؟"
           },
           "cevap": {
-            "tr": "İhtiyacınıza göre teklifle belirlenir; genel bir fiyat aralığı demo metninde yer almaz.",
-            "en": "A quote based on your needs sets the price; a general range is not shown in this demo text.",
-            "ar": "يُحدَّد السعر عبر عرض سعر حسب احتياجاتك؛ ولا يُذكر نطاق عام في هذا النص التجريبي."
+            "tr": "Keşiften sonra iş kapsamına göre yazılı teklifle belirlenir; genel bir fiyat aralığı demo metninde yer almaz.",
+            "en": "After the survey, a written quote based on the scope sets the price; no general range is shown in this demo text.",
+            "ar": "يُحدَّد السعر بعرض مكتوب بعد المعاينة وفق نطاق العمل، ولا يُذكر نطاق عام في هذا النص التجريبي."
           }
         }
       ],
@@ -2406,14 +2457,14 @@
         "errcolor": "var(--mx-color-danger, #b42318)",
         "radius": "4px",
         "title": {
-          "tr": "Teklif isteyin",
-          "en": "Request a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Keşif isteyin",
+          "en": "Request a survey",
+          "ar": "اطلب معاينة"
         },
         "description": {
           "tr": "Bilgilerinizi bırakın; en geç iki iş günü içinde dönüş yaparız. Bu form demodur; e-posta istemciniz açılır, veri saklanmaz.",
           "en": "Leave your details; we reply within two business days. This form is a demo; it opens your e-mail client and stores no data.",
-          "ar": "اترك بياناتك وسنرد خلال يومي عمل. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يحفظ أي بيانات."
+          "ar": "اترك بياناتك؛ نردّ خلال يومي عمل على الأكثر. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يتم حفظ أي بيانات."
         },
         "panelTitle": {
           "tr": "Volt Elektrik",
@@ -2421,22 +2472,22 @@
           "ar": "Volt Elektrik"
         },
         "panelText": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
+          "tr": "Görseller temsilidir; bu bir kurulum demosudur.",
           "en": "Images are representative; this is a setup demo.",
           "ar": "الصور تمثيلية وهذا عرض تجريبي."
         },
         "address": {
           "tr": "Sanayi 1. Sokak No: 30, Şahinbey, Gaziantep (kurgusal adres)",
-          "en": "Industrial 1st Street No: 30, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع صناعي اول رقم 30، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "en": "Sanayi 1st Street No: 30, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع الصناعة الأول رقم 30، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "phone": "+90 342 026 01 01",
         "whatsapp": "903420260101",
         "email": "proje@volt.example",
         "hours": {
           "tr": "Pzt–Cum 08:30 – 18:00",
-          "en": "Mon–Wed 08:30 – 18:00",
-          "ar": "الاثنين–الأربعاء 08:30 – 18:00"
+          "en": "Mon–Fri 08:30 – 18:00",
+          "ar": "الاثنين–الجمعة 08:30 – 18:00"
         },
         "mapUrl": "",
         "mapEmbed": "",
@@ -2477,9 +2528,9 @@
         },
         "social": [],
         "formTitle": {
-          "tr": "Teklif formu",
-          "en": "Quote form",
-          "ar": "نموذج الطلب"
+          "tr": "Keşif talep formu",
+          "en": "Survey request form",
+          "ar": "نموذج طلب المعاينة"
         },
         "nameLabel": {
           "tr": "Ad Soyad",
@@ -2510,25 +2561,25 @@
           {
             "id": "a",
             "name": {
-              "tr": "Yeni talep",
-              "en": "New request",
-              "ar": "طلب جديد"
+              "tr": "Yeni tesisat",
+              "en": "New wiring",
+              "ar": "تمديدات جديدة"
             }
           },
           {
             "id": "b",
             "name": {
-              "tr": "Ölçü ve keşif",
-              "en": "Measure and survey",
-              "ar": "قياس واستقصاء"
+              "tr": "Pano yenileme",
+              "en": "Panel upgrade",
+              "ar": "تجديد اللوحة"
             }
           },
           {
             "id": "c",
             "name": {
-              "tr": "Teknik soru",
-              "en": "Technical question",
-              "ar": "سؤال فني"
+              "tr": "Arıza ve bakım",
+              "en": "Fault or maintenance",
+              "ar": "أعطال وصيانة"
             }
           },
           {
@@ -2615,7 +2666,8 @@
           "tr": "Merhaba, web sitenizden yazıyorum.",
           "en": "Hello, I am writing from your website.",
           "ar": "مرحبًا، أكتب إليكم من موقعكم الإلكتروني."
-        }
+        },
+        "formAction": ""
       },
       "data": [],
       "veri": {
@@ -2639,32 +2691,32 @@
           "ar": "Volt Elektrik"
         },
         "description": {
-          "tr": "Volt Elektrik, elektrik ve otomasyon sunar. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Volt offers electrical and automation. Images are representative and text is fictional.",
-          "ar": "يققدم فولط كهربية وأتمتة. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Volt Elektrik; konut, ofis ve işyerleri için elektrik tesisatı, pano ve otomasyon işleri yapan kurgusal bir demo firmadır. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Volt Elektrik is a fictional demo company doing electrical wiring, panels and automation for homes, offices and businesses. Images are representative; text is fictional.",
+          "ar": "فولت إلكتريك شركة تجريبية افتراضية تنفّذ التمديدات الكهربائية واللوحات والأتمتة للمنازل والمكاتب والمنشآت. الصور تمثيلية والنصوص افتراضية."
         },
         "name2": {
-          "tr": "Depo",
-          "en": "Warehouse",
-          "ar": "المستودع"
+          "tr": "Pano ve şema",
+          "en": "Panels and diagrams",
+          "ar": "اللوحات والمخططات"
         },
         "spot2": {
-          "tr": "Malzeme rafa kodlu; barkodla sevk.",
-          "en": "Material coded to the shelf; shipped by barcode.",
-          "ar": "المواد موسومة على الرف؛ تُشحن بالباركود."
+          "tr": "Etiketli pano ve teslimde güncel tek hat şeması.",
+          "en": "Labelled panels and an up-to-date single-line diagram at handover.",
+          "ar": "لوحات موسومة ومخطط أحادي الخط محدَّث عند التسليم."
         },
-        "icon2": "verified",
+        "icon2": "electric_meter",
         "name3": {
-          "tr": "Atölye",
-          "en": "Workshop",
-          "ar": "ورشة"
+          "tr": "Test ve ölçüm",
+          "en": "Testing",
+          "ar": "الفحص والقياس"
         },
         "spot3": {
-          "tr": "Makine bakımında kayıt ve alet kontrolü.",
-          "en": "A record and tool inspection during machine maintenance.",
-          "ar": "تسجيل وتحقق الأدوات خلال صيانة الآلة."
+          "tr": "Topraklama ve izolasyon ölçümü raporlanır.",
+          "en": "Earthing and insulation measurements are reported.",
+          "ar": "تُوثَّق قياسات التأريض والعزل في تقرير."
         },
-        "icon3": "schedule",
+        "icon3": "speed",
         "img": "sanayi-ekip-saha.webp",
         "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
@@ -2730,16 +2782,16 @@
         },
         "description": {
           "tr": "Pzt–Cum 08:30 – 18:00",
-          "en": "Mon–Wed 08:30 – 18:00",
-          "ar": "الاثنين–الأربعاء 08:30 – 18:00"
+          "en": "Mon–Fri 08:30 – 18:00",
+          "ar": "الاثنين–الجمعة 08:30 – 18:00"
         },
         "phone": "+90 342 026 01 01",
         "whatsapp": "903420260101",
         "email": "proje@volt.example",
         "address": {
           "tr": "Sanayi 1. Sokak No: 30, Şahinbey, Gaziantep (kurgusal adres)",
-          "en": "Industrial 1st Street No: 30, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع صناعي اول رقم 30، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "en": "Sanayi 1st Street No: 30, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع الصناعة الأول رقم 30، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "mapsUrl": "",
         "waMessage": {
@@ -2753,9 +2805,9 @@
           "ar": "اتصل بنا"
         },
         "callText": {
-          "tr": "Hafta içi 09:00 – 18:00",
-          "en": "Weekdays 09:00 – 18:00",
-          "ar": "أيام الأسبوع 09:00 – 18:00"
+          "tr": "Pzt–Cum 08:30 – 18:00",
+          "en": "Mon–Fri 08:30 – 18:00",
+          "ar": "الاثنين–الجمعة 08:30 – 18:00"
         },
         "callBtn": {
           "tr": "Ara",
@@ -2847,9 +2899,9 @@
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "radius": "4px",
         "title": {
-          "tr": "Aydınlıkta",
-          "en": "In the light",
-          "ar": "في النور"
+          "tr": "Elektrik işiniz için keşif isteyin",
+          "en": "Request a survey for your electrical job",
+          "ar": "اطلب معاينة لعملك الكهربائي"
         },
         "text": {
           "tr": "İki iş günü içinde dönüş yaparız. Bu demo sitede veri saklanmaz.",
@@ -2857,9 +2909,9 @@
           "ar": "نردّ خلال يومي عمل. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
         },
         "btn1Label": {
-          "tr": "Formu doldurun",
-          "en": "Fill the form",
-          "ar": "املأ النموذج"
+          "tr": "Keşif iste",
+          "en": "Request a survey",
+          "ar": "اطلب معاينة"
         },
         "btn1Url": "teklif-al",
         "btn2Label": {
@@ -2882,8 +2934,8 @@
         },
         "hours": {
           "tr": "Pzt–Cum 08:30 – 18:00",
-          "en": "Mon–Wed 08:30 – 18:00",
-          "ar": "الاثنين–الأربعاء 08:30 – 18:00"
+          "en": "Mon–Fri 08:30 – 18:00",
+          "ar": "الاثنين–الجمعة 08:30 – 18:00"
         },
         "hoursLabel": {
           "tr": "Çalışma saatleri",
@@ -3055,8 +3107,8 @@
         "hours": [],
         "address": {
           "tr": "Sanayi 1. Sokak No: 30, Şahinbey, Gaziantep (kurgusal adres)",
-          "en": "Industrial 1st Street No: 30, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع صناعي اول رقم 30، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "en": "Sanayi 1st Street No: 30, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع الصناعة الأول رقم 30، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "phone": "+90 342 026 01 01",
         "email": "proje@volt.example",
