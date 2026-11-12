@@ -21,9 +21,9 @@
   },
   "pathnext": "",
   "description": {
-    "tr": "Elektrik projesi ve tesisat; görseller temsilîdir.",
-    "en": "Electrical project and wiring; images are representative.",
-    "ar": "مشروع كهري وتوصيل؛ الصور تمثيلية."
+    "tr": "Elektrik tesisatı, pano ve otomasyon; görseller temsilîdir.",
+    "en": "Electrical wiring, panels and automation; images are representative.",
+    "ar": "تمديدات كهربائية ولوحات وأتمتة؛ الصور تمثيلية."
   },
   "spot": {
     "tr": "",
@@ -42,6 +42,6 @@
     "ar": "من نحن"
   },
   "text": {},
-  "update": "2026-11-05T23:44:32.596Z",
+  "update": "2026-11-12T07:35:27.644Z",
   "date": "2026-10-30"
 }

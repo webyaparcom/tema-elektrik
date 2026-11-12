@@ -1,7 +1,7 @@
 {
   "name": "Volt Elektrik",
   "short_name": "Volt Elektri",
-  "description": "Elektrik projesi ve tesisat; görseller temsilîdir.",
+  "description": "Konut ve işyerleri için elektrik tesisatı, pano ve otomasyon; görseller temsilîdir.",
   "start_url": "/tr/",
   "scope": "/",
   "display": "standalone",

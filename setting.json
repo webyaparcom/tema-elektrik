@@ -2,14 +2,14 @@
   "order": false,
   "user": false,
   "description": {
-    "tr": "Elektrik projesi ve tesisat; görseller temsilîdir.",
-    "en": "Electrical project and wiring; images are representative.",
-    "ar": "مشروع كهري وتوصيل؛ الصور تمثيلية."
+    "tr": "Konut ve işyerleri için elektrik tesisatı, pano ve otomasyon; görseller temsilîdir.",
+    "en": "Electrical wiring, panels and automation for homes and businesses; images are representative.",
+    "ar": "التمديدات الكهربائية واللوحات والأتمتة للمنازل والمنشآت؛ الصور تمثيلية."
   },
   "keyword": {
-    "tr": "elektrik, panel, otomasyon",
-    "en": "electrical, panel, automation",
-    "ar": "كهربية، لوحة، أتمتة"
+    "tr": "elektrik tesisatı, pano, otomasyon, aydınlatma, topraklama",
+    "en": "electrical wiring, panels, automation, lighting, earthing",
+    "ar": "تمديدات كهربائية، لوحات توزيع، أتمتة، إنارة، تأريض"
   },
   "category": "Kurumsal",
   "name": "Volt Elektrik",
