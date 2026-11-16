@@ -1,148 +1,138 @@
-<section class="modulex-values">
-  <div class="modulex-values-container">
-    <div class="modulex-values-header">
-      <div class="modulex-values-badge">{{badge}}</div>
-      <h2 class="modulex-values-title">{{title}}</h2>
-      <p class="modulex-values-desc">{{description}}</p>
-    </div>
-    <div class="modulex-values-grid">
-      {{html}}
-    </div>
+<section class="modulex-kbn{{kbnsinif}}" {{kbnetiket}}>
+  <div class="modulex-kbn-ic">
+    <header class="modulex-kbn-bas">
+      {{kbnust}}
+      {{kbnbaslik}}
+      {{kbnmetin}}
+    </header>
+    <div class="modulex-kbn-izgara">{{kbnkartlar}}</div>
   </div>
 </section>
 
 <style>
-  .modulex-values {
-    width: 100%;
-    padding: 72px 20px;
-    background: --bgcolor--;
+  /* kart-bento — bento ızgara (15 Kas 2026, G4 · D17). values-1 / ozellik-zigzag eşit kart sırası ya da zikzaktır; bu modül 4 kolonlu,
+     farklı boyutlu karolar: ilk kart 2×2 öne çıkan (görseli zemin olur), kalan karolar boşluğu dolduracak biçimde genişler.
+     Karo üstünde ikon + numara; bağlantılı karoda köşe oku. Renkler desing'den; mantıksal CSS → RTL. */
+  .modulex-kbn {
     box-sizing: border-box;
+    width: 100%;
+    padding: clamp(56px, 8vw, 104px) 20px;
+    background: --bg--;
+    color: --text--;
+    font-size: 1rem;
+    font-family: var(--mx-font-sans, inherit);
   }
-
-  .modulex-values-container {
-    max-width: --max--;
-    margin: 0 auto;
+  .modulex-kbn *,
+  .modulex-kbn *::before,
+  .modulex-kbn *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-kbn :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  .modulex-kbn-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-kbn-bas { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px 48px; align-items: end; margin-block-end: 40px; }
+  .modulex-kbn--bassiz .modulex-kbn-bas { display: none; }
+  .modulex-kbn-ust { grid-column: 1 / -1; margin: 0; color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-kbn-baslik {
+    margin: 0;
+    font-family: var(--mx-font-heading, inherit);
+    font-size: clamp(1.9rem, 3.6vw, 3rem);
+    font-weight: 750;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
   }
+  .modulex-kbn-metin { margin: 0; color: --muted--; font-size: 1.05rem; line-height: 1.7; }
 
-  .modulex-values-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .modulex-values-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: --badgebg--;
-    color: --badgecolor--;
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  /* Rozet bos birakilirsa (metin yok) bos pil cizilmesin */
-  .modulex-values-badge:empty {
-    display: none;
-  }
-
-  .modulex-values-title {
-    font-size: 34px;
-    font-weight: 800;
-    color: --titlecolor--;
-    margin: 0 0 12px;
-  }
-
-  .modulex-values-desc {
-    font-size: 16px;
-    color: --textcolor--;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .modulex-values-grid {
+  .modulex-kbn-izgara {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: minmax(220px, auto);
+    grid-auto-flow: dense;
+    gap: 16px;
   }
-
-  .modulex-values-card {
-    background: --cardbg--;
-    border-radius: 14px;
-    padding: 28px 22px;
-    text-align: center;
-    box-shadow: 0 8px 24px rgba(27, 58, 107, 0.08);
-    border: 1px solid rgba(27, 58, 107, 0.06);
-    animation: modulexValuesIn 0.55s ease both;
-    transition: transform 0.28s ease, box-shadow 0.28s ease;
-  }
-
-  .modulex-values-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 32px rgba(46, 107, 255, 0.14);
-  }
-
-  @keyframes modulexValuesIn {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .modulex-values-icon {
-    width: 56px;
-    height: 56px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
-    background: rgba(46, 107, 255, 0.12);
-    color: --accent--;
+  .modulex-kbn-kart {
+    position: relative;
     display: flex;
+    overflow: hidden;
+    border: 1px solid --cizgi--;
+    border-radius: --yuvarlak--;
+    background: --kartBg--;
+    color: --text--;
+    text-decoration: none;
+    isolation: isolate;
+    animation: modulex-kbn-gel 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .modulex-kbn-kart:nth-child(2) { animation-delay: 0.06s; }
+  .modulex-kbn-kart:nth-child(3) { animation-delay: 0.12s; }
+  .modulex-kbn-kart:nth-child(4) { animation-delay: 0.18s; }
+  .modulex-kbn-kart:nth-child(n + 5) { animation-delay: 0.24s; }
+  a.modulex-kbn-kart { cursor: pointer; }
+  a.modulex-kbn-kart:hover { transform: translateY(-4px); border-color: --accent--; box-shadow: 0 24px 40px -28px color-mix(in srgb, --text-- 50%, transparent); }
+  a.modulex-kbn-kart:focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-kbn-kart--genis { grid-column: span 2; }
+  .modulex-kbn-kart--tam { grid-column: 1 / -1; min-height: 180px; }
+  .modulex-kbn-kart--vurgu { grid-column: span 2; grid-row: span 2; background: --vurguBg--; border-color: transparent; color: --vurguText--; }
+  .modulex-kbn-kart-ic { position: relative; z-index: 2; display: flex; flex-direction: column; gap: 10px; width: 100%; padding: 26px; }
+  .modulex-kbn-kart-ust { display: flex; align-items: center; justify-content: space-between; margin-block-end: auto; padding-block-end: 24px; }
+  .modulex-kbn-ikon {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .modulex-values-icon .material-symbols-outlined {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: color-mix(in srgb, --accent-- 14%, transparent);
+    color: --accentInk--;
     font-size: 28px;
-    line-height: 1;
+    transition: transform 0.3s ease;
   }
+  .modulex-kbn-kart--vurgu .modulex-kbn-ikon { background: color-mix(in srgb, --vurguText-- 16%, transparent); color: --vurguText--; }
+  a.modulex-kbn-kart:hover .modulex-kbn-ikon { transform: rotate(-8deg) scale(1.06); }
+  .modulex-kbn-no { color: color-mix(in srgb, currentColor 40%, transparent); font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .modulex-kbn-etiket { margin: 0; color: --accentInk--; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .modulex-kbn-kart--vurgu .modulex-kbn-etiket { color: inherit; opacity: 0.8; }
+  .modulex-kbn-kart-baslik { margin: 0; font-size: 1.2rem; font-weight: 700; line-height: 1.3; }
+  .modulex-kbn-kart--vurgu .modulex-kbn-kart-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.6rem, 2.6vw, 2.3rem); letter-spacing: -0.02em; line-height: 1.12; }
+  .modulex-kbn-kart-metin { margin: 0; color: --muted--; line-height: 1.6; }
+  .modulex-kbn-kart--vurgu .modulex-kbn-kart-metin { color: inherit; opacity: 0.85; font-size: 1.05rem; }
+  .modulex-kbn-ok { position: absolute; inset-block-start: 22px; inset-inline-end: 22px; font-size: 22px; opacity: 0; transition: opacity 0.3s ease, transform 0.3s ease; }
+  a.modulex-kbn-kart:hover .modulex-kbn-ok { opacity: 1; transform: translate(2px, -2px); }
+  .modulex-kbn-kart:has(.modulex-kbn-no) .modulex-kbn-ok { inset-block-start: auto; inset-block-end: 22px; }
 
-  .modulex-values-card-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: --titlecolor--;
-    margin: 0 0 10px;
+  .modulex-kbn-gorsel { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+  .modulex-kbn-kart--gorsel { color: --gorselText--; border-color: transparent; }
+  .modulex-kbn-kart--gorsel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to top, color-mix(in srgb, --karartmaRenk-- 82%, transparent), color-mix(in srgb, --karartmaRenk-- 10%, transparent) 70%);
   }
+  .modulex-kbn-kart--gorsel .modulex-kbn-kart-metin,
+  .modulex-kbn-kart--gorsel .modulex-kbn-etiket { color: inherit; opacity: 0.9; }
+  .modulex-kbn-kart--gorsel .modulex-kbn-ikon { background: color-mix(in srgb, --gorselText-- 18%, transparent); color: inherit; }
+  a.modulex-kbn-kart--gorsel:hover .modulex-kbn-gorsel { transform: scale(1.05); }
+  @keyframes modulex-kbn-gel { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
 
-  .modulex-values-card-text {
-    font-size: 14px;
-    line-height: 1.65;
-    color: --textcolor--;
-    margin: 0;
-  }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-kbn-baslik,
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-kbn-kart--vurgu .modulex-kbn-kart-baslik { letter-spacing: 0; line-height: 1.35; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-kbn-ust { letter-spacing: 0; }
 
   @media (max-width: 1024px) {
-    .modulex-values-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    .modulex-kbn-izgara { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .modulex-kbn-kart--genis,
+    .modulex-kbn-kart--tam { grid-column: span 1; }
+    .modulex-kbn--vurgulu .modulex-kbn-kart:last-child:nth-child(even),
+    .modulex-kbn:not(.modulex-kbn--vurgulu) .modulex-kbn-kart:last-child:nth-child(odd) { grid-column: 1 / -1; }
+    .modulex-kbn-kart--vurgu { grid-row: span 1; min-height: 320px; }
+    .modulex-kbn-bas { grid-template-columns: minmax(0, 1fr); }
   }
-
   @media (max-width: 768px) {
-    .modulex-values {
-      padding: 48px 14px;
-    }
-
-    .modulex-values-grid {
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-
-    .modulex-values-title {
-      font-size: 28px;
-    }
+    .modulex-kbn-izgara { grid-template-columns: minmax(0, 1fr); grid-auto-rows: auto; }
+    .modulex-kbn-kart--vurgu { grid-column: auto; }
+    .modulex-kbn-kart-ust { padding-block-end: 12px; }
   }
-
   @media (prefers-reduced-motion: reduce) {
-    .modulex-values-card {
-      animation: none !important;
-      transition: none !important;
-    }
+    .modulex-kbn *,
+    .modulex-kbn-kart { animation: none !important; transition: none !important; }
   }
 </style>
